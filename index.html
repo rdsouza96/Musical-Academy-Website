@@ -1,0 +1,32 @@
+<html><head><title>welcome</title>
+    <script language="javascript">
+        reqObj=null;
+        function varify(){
+            document.getElementById("res").innerHTML="Checking";
+            if(window.XMLHttpRequest){
+                reqObj=new XMLHttpRequest();
+            }else {
+                reqObj=new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            
+            reqObj.onreadystatechange=process;
+            reqObj.open("POST","reg.jsp?id="+document.getElementById("username").value,true);
+            reqObj.send(null);
+        }
+        function process(){
+            if(reqObj.readyState==4){
+                document.getElementById("res").innerHTML=reqObj.responseText;
+            }
+        }
+        </script>
+    
+    </head>
+    <body>
+        <h1>welcome to this application</h1>
+    <form method="get" action="reg.jsp">
+        User Name<input name="t1" id="username" onblur="varify();" type="text"><span id="res"></span><br>
+        Password<input name="t2" type="text"><br>
+        <input value="Press" type="submit">
+    </form>
+    
+</body></html>

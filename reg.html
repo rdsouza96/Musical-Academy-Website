@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+<form method="post">
+<table border=0>
+<tr>
+<p><td>Name:</td> <td><input type="text" name="c1" size="30" maxlength="40" required placeholder="enter name" onblur="validate(this)"></p>
+<script language="javascript">
+function validate(inputfield)
+{
+if(inputfield.value.length==0)
+{
+alert("Please enter name");
+return false;
+}
+else
+{
+return true;
+}
+}
+</script>
+</td></tr>
+</input>
+<br/>
+<tr><p>
+<td><p>Nationality:</p></td><td><p><input type="text" name="c2" size="30" maxlength="40" required placeholder="enter Nationality" onblur="validate1(this)">
+<script language="javascript">
+function validate1(inputfield)
+{
+if(inputfield.value.length==0)
+{
+alert("Please enter Nationality");
+return false;
+}
+else
+{
+return true;
+}
+}
+</script></p>
+</td></tr>
+<p><td>Date of birth:</td></p>
+<td><p>
+<Select name="date">
+<option>1
+<option>2
+<option>3
+<option>4
+<option>5
+<option>6
+<option>7
+<option>8
+<option>9
+<option>10
+<option>11
+<option>12
+<option>13
+<option>14
+<option>15
+<option>16
+<option>17
+<option>18
+<option>19
+<option>20
+<option>21
+<option>22
+<option>23
+<option>24
+<option>25
+<option>26
+<option>27
+<option>28
+<option>29
+<option>30
+<option>31
+</select>
+<Select name="month">
+<option>Jan
+<option>Feb
+<option>Mar
+<option>Apr
+<option>May
+<option>June
+<option>July
+<option>Aug
+<option>Sept
+<option>Oct
+<option>Nov
+<option>Dec
+</select>
+<select name="month">
+<option>1994
+<option>1955
+<option>1996
+<option>1997
+<option>1998
+<option>1999
+<option>2000
+<option>2001
+<option>2002
+<option>2003
+<option>2004
+<option>2005
+<option>2006
+<option>2007
+<option>2008
+<option>2009
+<option>2010
+<option>2011
+<option>2012
+</select>
+</p></td>
+</tr>
+
+
+</input>
+<br/>
+<tr>
+<td><p>School/College:</p></td> <td><p><input type="text" name="c1" size="30" maxlength="40" required placeholder="enter school/college name" onblur="validate4(this)"></p>
+<script language="javascript">
+function validate4(inputfield)
+{
+if(inputfield.value.length==0)
+{
+alert("Please enter school/college name");
+return false;
+}
+else
+{
+return true;
+}
+}
+</script>
+</td></tr>
+</input>
+<br/>
+
+<tr>
+<td><p>School/College type:</p></td> <td><p><select>
+<option>AM</option>
+<option>PM</option>
+</select></p></td></tr>
+
+<tr>
+<td><p>Address:</p></td> <td><p><textarea>
+</textarea></p></td></tr>
+<tr><td><p>Email:</p></td> <td><p><input type="email" name="c4" size"30" maxlength="25" required placeholder="enter email" onblur="validateEmail(this)"></p>
+ <script language="javascript">
+function validateEmail(inputfield)
+{
+var EmailID=document.form.Email.value;
+at pos=emailID.index?Of("@");
+dot pos=Email.ID.lastIndexOf(".");
+if(at pos<1 || (dotpos-atpos<2))
+{
+ alert("Not a valid e-mail address");
+        return false;
+ else
+}
+return true;
+}
+
+}
+</script>
+
+
+ </td></tr>
+</input>
+<br/>
+<p><tr>
+<td><p>Phone:</p></td> <td><p><input type="text" name="c5" size="30" maxlength="40" required placeholder="enter phone" onblur="validate3(this)"></p>
+<script language="javascript">
+function validate3(inputfield)
+{
+if(inputfield.value.length!=10)
+{
+alert("mob no should conatin 10 digits");
+return false;
+}
+else
+{
+return true;
+}
+}
+</script>
+</td></tr>
+</input>
+<br/>
+<tr>
+<td><p>Select course:</p></td> <td><p><select>
+<option>guitar</option>
+<option>violin</option>
+<option>Drums</option>
+<option>keyboard</option>
+<option>flute</option>
+
+</p>
+</select></td></tr>
+<tr>
+<td>Gender:</td><td><p>Male<input type="radio" name="gender" required value="male">
+</input>
+Female<input type="radio" name="gender" required value="female">
+</input></p></td></tr>
+<br/>
+<tr><td>
+<p><center><input type="submit" name="c8" value="submit">
+</input>
+<input type="reset" name="c9" value="reset">
+</input></center></p></td></tr>
+</table>
+</form>
+</center>
+</body>
+</html>

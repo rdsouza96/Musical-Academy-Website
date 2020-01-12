@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="Keywords" 
+<title> Musician's Academy </title>
+<link href="main.css" rel="stylesheet" type="text/css" />
+<style>
+#mydiv {
+width: 200px;
+height: 200px;
+-webkit-transition: width 4s,height 4s;transition:width 4s,height 4s;
+}
+#mydiv:hover {
+width: 700px;
+height: 700px;
+}
+
+</style>
+</head>
+<body>
+<center>
+ 
+   <h1><i><u> <img src="mus2.jpg" height=90 width=150><font size=8 color="black"> MUSICIAN'S ACADEMY</font></u></i></h1>
+   
+
+   <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      
+    </div>
+	<div id ="mydiv">
+    <ul class="nav navbar-nav">
+	<li><a class="navbar-brand" href="instru.html" target="right">Instruments</a></li>
+      	<li><a href="announ.html" target="right" >Announcements</a></li>
+     	<li><a href="timetable.html" target="right">Time Table</a></li>
+	<li><a href="reg.html" target="right">Register with us</a></li>
+	<li><a href="aboutus.html" target="right">Back</a></li>
+
+    </ul>
+  </div></div>
+</nav>
+</center>
+</body>
+</html>
